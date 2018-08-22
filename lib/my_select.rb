@@ -8,5 +8,5 @@ def my_select(collection)
     end
     n += 1
   end
-  select
+  select_array
 end
