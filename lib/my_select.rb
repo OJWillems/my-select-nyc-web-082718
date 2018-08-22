@@ -7,5 +7,5 @@ def my_select(collection)
     end
     n += 1
   end
-  collection
+  select
 end
