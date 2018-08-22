@@ -1,10 +1,10 @@
 def my_select(collection)
   n = 0
-  selection = []
+  select_array = []
   while n < collection.size
-    selection.push(yield collection[n])
+    select_array.push(yield collection[n])
     if yield(collection[n])
-      selection.push(collection[n])
+      select_array.push(collection[n])
     end
     n += 1
   end
