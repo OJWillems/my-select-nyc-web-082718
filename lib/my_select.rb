@@ -3,6 +3,7 @@ def my_select(collection)
   while n < collection.size
     collection.select do |x|
       yield.include?(x)
+    end
     n += 1
   end
   collection
