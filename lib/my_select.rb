@@ -2,9 +2,7 @@ def my_select(collection)
   n = 0
   select = []
   while n < collection.size
-    if yield(collection[n])
-      select.push(collection[n])
-    end
+    select.push(yield collection[n])
     n += 1
   end
   select
